@@ -11,4 +11,5 @@ def hello():
 def time():
   now = datetime.now()
   current_time = now.strftime("%H:%M:%S")
+  print("time() called at " + current_time)
   return current_time
