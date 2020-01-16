@@ -1,6 +1,6 @@
-Prerequisites: python3.7+, pip3, virtualenv, aws-cli
+Prerequisites: python3.7, pip3, aws-cli
     
-    virtualenv venv -p python3
+    python3 -m venv venv
 
     . venv/bin/activate
 
