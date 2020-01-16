@@ -1,6 +1,6 @@
 Prerequisites: python3.7+, pip3, virtualenv, aws-cli
     
-    virtualenv venv
+    virtualenv venv -p python3
 
     . venv/bin/activate
 
@@ -10,6 +10,8 @@ Prerequisites: python3.7+, pip3, virtualenv, aws-cli
 
     zappa deploy dev
 
+    zappa status dev
+
     deactivate
 
 
@@ -17,5 +19,14 @@ Prerequisites: python3.7+, pip3, virtualenv, aws-cli
     . venv/bin/activate
 
     zappa update dev
+
+    zappa rollback dev # -n 1
+
+    deactivate
+
+
+    . venv/bin/activate
+
+    zappa undeploy dev
 
     deactivate
