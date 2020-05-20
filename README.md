@@ -12,6 +12,12 @@ Prerequisites: python3.7, pip3, aws-cli
 
     zappa status dev
 
+    zappa tail dev
+
+    zappa invoke dev 'main.time'
+
+    zappa invoke dev "print(1 + 2 + 3); print(4 + 5 + 6)" --raw
+
     deactivate
 
 
